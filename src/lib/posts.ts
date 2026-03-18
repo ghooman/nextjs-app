@@ -15,7 +15,7 @@ export function getSortedPostsData() {
     const fullPath = path.join(postsDirectory, fileName);
     // fullPath = 'src/posts/pre-rendering.md', 'src/posts/ssg-ssr.md'
     const fileContents = fs.readFileSync(fullPath, "utf8");
-    const matterResult = matter(fileContents);
+    const matterResult = matter(fileContents);   
 
     return {
       id,
